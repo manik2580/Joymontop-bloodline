@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Platform - Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">জয়মন্টপ ব্লাডলাইন</h1>
+            <nav class="nav">
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="admin.html" class="active">অ্যাডমিন লগইন</a></li>
+                    <li><a href="index.html">হোম</a></li>
+                    <li><a href="search.html">ডোনার খুঁজুন</a></li>
+                    <li><a href="register.html">ডোনার রেজিস্ট্রেশন</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2 class="page-title">অ্যাডমিন লগইন</h2>
+        <form id="admin-login-form" class="login-form">
+            <div class="form-group">
+                <label for="username">ইউজারনেম:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">পাসওয়ার্ড:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button">লগইন করুন</button>
+            <p id="login-error-message" class="error-message" style="display: none;">ভুল ইউজারনেম বা পাসওয়ার্ড।</p>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
